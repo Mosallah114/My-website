@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Invens - eCommerce</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Invens eCommerce</h1>
+        <input type="text" id="searchInput" placeholder="Search products..." />
+        <div id="categoryFilters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="Clothes">Clothes</button>
+            <button class="filter-btn" data-category="Shoes">Shoes</button>
+            <button class="filter-btn" data-category="Accessories">Accessories</button>
+            <button class="filter-btn" data-category="Electronics">Electronics</button>
+            <button class="filter-btn" data-category="Beauty">Beauty</button>
+        </div>
+    </header>
+    <main>
+        <div id="products" class="products-grid">
+            <!-- Products will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <!-- Popup for large image -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span id="popupClose" class="popup-close">&times;</span>
+            <img id="popupImage" src="" alt="Product Image" />
+            <div id="popupDetails">
+                <h2 id="popupName"></h2>
+                <p id="popupPrice"></p>
+                <button id="orderBtn">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
